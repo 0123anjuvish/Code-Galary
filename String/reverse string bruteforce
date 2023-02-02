@@ -1,0 +1,19 @@
+function rev(str){
+
+let space = "";
+
+/* let splitArr = str.split(" */
+
+for(let i=str.length-1;i>=0;i--){
+
+space += str[i];
+
+}
+
+return space;
+
+}
+
+let ans = rev("hello ji");
+
+console.log(ans)
