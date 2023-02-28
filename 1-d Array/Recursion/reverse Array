@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 
+	   int arr[] = {1,5,4,2,1,4,2};
+	   reverse(arr,0,arr.length-1);
+	    for(int x :arr){
+	        System.out.print(x+" ");
+	    }
+	}
+	static void reverse(int arr[], int s, int e){
+	   if(s>=e){
+	       return;
+	   }
+	   int temp = arr[s];
+	   arr[s] = arr[e];
+	   arr[e] = temp;
+	   reverse(arr,++s,--e);
+	   
+	} 
+
+}
